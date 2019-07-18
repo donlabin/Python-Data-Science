@@ -2,7 +2,7 @@
 
 # Get Data
 
-# Clean Data
+# Preprocess & Clean Data & Save Data to DB
 
 # EDA(Explorary Data Analysis)
 
