@@ -15,10 +15,27 @@ Data types in Python
 		ex: ''.join(['a','b','c','d']) -> 'abcd' ； ','.join(['a','b','c','d']) -> 'a,b,c,d'
 		ex: 'Finance'.lower() ->'finance' ； 'Stockprice'.upper() -> 'STOCKPRICE'
 		ex: a = 'Python' a.find('t') -> 2，表示在index為2的地方找到t這個字符
-  *Set Types 
+  *Set Types (集合本身可變，但集合內元素不可變,例如:{1,[2,3]}會報錯，因為[2,3]是可變的)
     >contains an unordered collection of unique and immutable objects
+		ex:Days = set(["Sun","Mon","Tue","Wed","Thur","Fri","Sat"])，打印出來是不會照原本順序的，驗證set是無序的
+		ex:Dates = set((1,2,3))，打印出來為{1,2,3}
+		ex:x = {'a','b','b','c'} ->打印出來為{'a','b','c'}
+			-創建空集合:只能用set()去創建
+			-size: len()
+			-membership: in；not in
+			-集合的操作是模仿數學集合的操作
+				#Union: x1.union(x2[,x3...]) or x1|x2[|x3]
+				#intersection: x1.intersection(x2[,x3...]) or x1&x2[&x3]
+				#difference: x1.difference(x2[,x3...]) or x1 - x2[-x3] , means return the set of all elements that are in x1 but not in x2
+				#symmetric difference:x1.symmetric_difference(x2[,x3...]) or x1 ^ x2[^x3] ,return the set of all elements in either x1 or x2,but not both
+			-relationship between two sets
+				#x1.isdisjoint(x2) determines whether or not two sets have any elements in common.
+				#x1.issubset(x2) determine whether one set is a subset of the other，也可用x1 <= x2
+				#x1.issuperset(x2) determine whether one set is a superset of the other，也可用x1 >= x2
+				#x1 > x2(嚴格大於) , a proper superset is the same as a superset,except that the set can't be identical
+				#modifying a set: x1.update(x2) or x1 |= x2；x1.intersection_update(x2) or x1 &= x2 ；x1.difference_update(x2) or x1 -= x2
   *Mapping Types
-    >There is currently only one standard mapping type, the dictionary
+    >There is currently only one standard ㄍmapping type, the dictionary
 
 An abstract base class(ABC) 抽象基類
   *a blueprint for other classes.
