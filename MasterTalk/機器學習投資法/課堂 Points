@@ -1,0 +1,18 @@
+Data types in Python
+  *Numeric Types
+  *Sequence Types
+    >Lists: a collection which is ordered and mutable
+    ex:list1 = [2,8.5,False]    list2 = list([2,8.5,False])
+      -增加元素: list1.append(-23)，默認在最後添加；list1.extend([-1,-2,-4])，增加比較多元素可用此方法
+      -插入元素: list1.insert(2,[1,2,3])，第一個引數為index，表示要在哪裡做插入
+      -刪除元素: list1.pop()，表示刪除最後一個元素；list.pop(3)，表示刪除index為3的元素；list1.remove(8.5)，表示刪除第一個出現數值為8.5的元素
+    >Tuples: a collection which is ordered and 
+    >Range Objects: represents an immutable sequence of numbers
+    >Strings: a special type of sequence that can only store characters
+  *Set Types
+    >contains an unordered collection of unique and immutable objects
+  *Mapping Types
+    >There is currently only one standard mapping type, the dictionary
+
+An abstract base class(ABC) 抽象基類
+  *a blueprint for other classes.
